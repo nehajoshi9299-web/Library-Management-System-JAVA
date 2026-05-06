@@ -117,44 +117,59 @@ String password = "your_password";
 
 ## 📸 Project Screenshots
 
+### Admin
 ### 🔐 Login Page
 <p align="center">
-  <img src="screenshots/login.png" width="800"/>
+  <img src="screenshots/login.jpg" width="800"/>
 </p>
 
 ---
 
 ### 🏠 Dashboard
 <p align="center">
-  <img src="screenshots/dashboard.png" width="800"/>
+  <img src="screenshots/dashboard.jpg" width="800"/>
 </p>
 
 ---
 
 ### 📖 Book Management
 <p align="center">
-  <img src="screenshots/book-management.png" width="800"/>
+  <img src="screenshots/add-book.jpg" width="800"/>
 </p>
 
+<p align="center">
+  <img src="screenshots/available-books-list.jpg" width="800"/>
+</p>
 ---
 
 ### 👩‍🎓 Student Management
 <p align="center">
-  <img src="screenshots/student-management.png" width="800"/>
+  <img src="screenshots/add-student.jpg" width="800"/>student-list
 </p>
 
+<p align="center">
+  <img src="screenshots/student-list.jpg" width="800"/>student-list
+</p>
 ---
 
 ### 🔄 Issue & Return
 <p align="center">
-  <img src="screenshots/issue-return.png" width="800"/>
+  <img src="screenshots/issue-book.jpg" width="800"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/issue-return-detail.jpg" width="800"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/list-of-requested-book.jpg" width="800"/>
 </p>
 
 ---
 
-### 📊 Transaction History
+### Student
 <p align="center">
-  <img src="screenshots/transactions.png" width="800"/>
+  <img src="screenshots/stu-dashboard.jpg" width="800"/>
 </p>
 
 ---
