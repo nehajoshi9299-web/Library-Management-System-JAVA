@@ -144,7 +144,7 @@ String password = "your_password";
 
 ### 👩‍🎓 Student Management
 <p align="center">
-  <img src="screenshots/add-student.jpg" width="800"/>student-list
+  <img src="screenshots/" width="800"/>
 </p>
 
 <p align="center">
@@ -155,6 +155,10 @@ String password = "your_password";
 ### 🔄 Issue & Return
 <p align="center">
   <img src="screenshots/issue-book.jpg" width="800"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/" width="800"/>
 </p>
 
 <p align="center">
