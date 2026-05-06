@@ -1,133 +1,117 @@
-# 🎓 Student Management System (SMS)
+# 📚 Library Management System (LMS)
 
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-green)
-![Tech](https://img.shields.io/badge/Tech-PHP%20%7C%20MySQL%20%7C%20JS-blue)
+![Tech](https://img.shields.io/badge/Tech-Java%20%7C%20MySQL%20%7C%20JDBC-blue)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-A **Student Management System (SMS)** developed to streamline and digitize academic and administrative operations in educational institutions.  
-This project was built as part of the **MCA final year project**.
+A **Library Management System (LMS)** developed to digitize and streamline 
+book inventory, student borrowing records, and library operations.
+This project was built as part of the **Diploma in Software Engineering**.
 
 ---
 
 ## 📌 About the Project
 
-The Student Management System is designed to manage:
+The Library Management System is designed to manage:
 
-- Student records  
-- Attendance  
-- Exams & results  
-- Teachers & classes  
-- Communication between stakeholders  
+- Book inventory and categories
+- Student borrowing and return records
+- Issue and return cycle tracking
+- Admin and student access control
+- Transaction history and logs
 
-It replaces manual processes with an efficient, secure, and user-friendly system.
+It replaces manual register-based tracking with an efficient, 
+accurate, and user-friendly desktop system.
 
 ---
 
 ## 🚀 Features
 
+### 📖 Book Management
+- Add, update, delete book records
+- View books by category
+- Track book availability
+
 ### 👩‍🎓 Student Management
-- Add, update, delete student records  
-- View personal & academic details  
+- Register and manage student profiles
+- View borrowing history
+- Search student records
 
-### 👨‍🏫 Teacher Management
-- Manage teacher profiles  
-- Assign subjects & classes  
-
-### 📚 Subject & Class Management
-- Create classes and subjects  
-- Assign teachers to subjects  
-
-### 📝 Exam & Result Management
-- Create exams  
-- Enter and manage results  
-- Generate reports  
-
-### 📅 Attendance Management
-- Mark attendance  
-- View attendance reports  
+### 🔄 Issue & Return Management
+- Issue books to students
+- Record return dates
+- Automated overdue tracking
 
 ### 🔐 User Management
-- Role-based login system (Admin, Teacher, Student, Parent)  
-- Authentication & authorization  
+- Role-based login (Admin / Student)
+- Authentication and authorization
 
-### 📢 Notifications
-- Announcements & notices  
-- Communication between users  
+### 📊 Reports & Logs
+- View transaction history
+- Track all issue and return cycles
+- Generate borrowing reports
 
 ---
 
 ## 👥 Actors / Users
 
-- 👨‍💼 Admin  
-- 👨‍🏫 Teacher  
-- 👩‍🎓 Student  
-- 👨‍👩‍👧 Parent  
+- 👨‍💼 Admin
+- 👩‍🎓 Student
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:**
-- HTML5  
-- CSS3  
-- JavaScript  
-- Bootstrap  
-
-**Backend:**
-- PHP  
+**Language:**
+- Java
 
 **Database:**
-- MySQL (phpMyAdmin)  
+- MySQL
 
-**Server:**
-- XAMPP / WAMP  
+**Connectivity:**
+- JDBC (Java Database Connectivity)
+
+**IDE:**
+- NetBeans / IntelliJ IDEA
 
 ---
 
-## 📊 System Design
+## 📊 Database Schema
 
-- ✔️ Data Flow Diagrams (DFD)
-  <p align="center">
-  <img src="screenshots/dfd.png" width="500"/>
-</p>
-- ✔️ ER Diagram
-  <p align="center">
-  <img src="screenshots/er-diagram.png" width="500"/>
-</p> 
-- ✔️ Class Diagram
-  <p align="center">
-  <img src="screenshots/class-diagram.png" width="500"/>
-</p>
-- ✔️ Use Case Diagram  
-<p align="center">
-  <img src="screenshots/usecase.png" width="500"/>
-</p>
-- ✔️ Spiral Model
-  <p align="center">
-  <img src="screenshots/spiral-model.png" width="500"/>
-</p>
+- 6 Tables: Books, Students, Users, Categories, Transactions, Logs
 
 ---
 
 ## ⚙️ Installation & Setup
 
 ### Step 1: Install Requirements
-- Install **XAMPP / WAMP**
-- Install browser (Chrome recommended)
+- Install **JDK 8 or above**
+- Install **MySQL**
+- Install **NetBeans IDE** (recommended)
 
 ### Step 2: Setup Project
-1. Copy project folder to: htdocs
-2. 2. Start:
-- Apache  
-- MySQL  
+1. Clone the repository
+2. Open project in NetBeans
 
 ### Step 3: Database Setup
-1. Open **phpMyAdmin**
-2. Create database:schoolnew
-3. Import: schoolnew.sql
+1. Open **MySQL**
+2. Create database:
+   lms_db
+3. Import:
+   lms_db.sql
 
-### Step 4: Run Project
-http://localhost/your-project-folder
+### Step 4: Configure Connection
+1. Open `DBConnection.java`
+2. Update MySQL username and password:
+```java
+String url = "jdbc:mysql://localhost:3306/lms_db";
+String user = "your_username";
+String password = "your_password";
+```
+
+### Step 5: Run Project
+- Open in NetBeans
+- Click **Run** or press **F6**
 
 ---
 
@@ -140,7 +124,6 @@ http://localhost/your-project-folder
 
 ---
 
-
 ### 🏠 Dashboard
 <p align="center">
   <img src="screenshots/dashboard.png" width="800"/>
@@ -148,6 +131,12 @@ http://localhost/your-project-folder
 
 ---
 
+### 📖 Book Management
+<p align="center">
+  <img src="screenshots/book-management.png" width="800"/>
+</p>
+
+---
 
 ### 👩‍🎓 Student Management
 <p align="center">
@@ -156,84 +145,21 @@ http://localhost/your-project-folder
 
 ---
 
-### 📅 Teacher Management
+### 🔄 Issue & Return
 <p align="center">
-  <img src="screenshots/teacher-management.png" width="800"/>
+  <img src="screenshots/issue-return.png" width="800"/>
 </p>
 
 ---
 
-### 📅 Parents Management
+### 📊 Transaction History
 <p align="center">
-  <img src="screenshots/parents-management.png" width="800"/>
+  <img src="screenshots/transactions.png" width="800"/>
 </p>
 
 ---
 
----
-
-### 📅 Subject Management
-<p align="center">
-  <img src="screenshots/subject.png" width="800"/>
-</p>
-
----
-
-### 📅 Class Room Management
-<p align="center">
-  <img src="screenshots/classroom.png" width="800"/>
-</p>
-
----
-
-
-### 📅 Schedule Management
-<p align="center">
-  <img src="screenshots/schedule.png" width="800"/>
-</p>
-
----
-
-### 📅 Attendance Module
-<p align="center">
-  <img src="screenshots/attendance-1.png" width="800"/>
-</p>
-<p align="center">
-  <img src="screenshots/attendance-2.png" width="800"/>
-</p>
-<p align="center">
-  <img src="screenshots/attendance-3.png" width="800"/>
-</p>
-<p align="center">
-  <img src="screenshots/attendance-4.png" width="800"/>
-</p>
-<p align="center">
-  <img src="screenshots/attendance-5.png" width="800"/>
-</p>
-
----
-
-### 📝 Exam & Results
-<p align="center">
-  <img src="screenshots/exam.png" width="800"/>
-</p>
-
-<p align="center">
-  <img src="screenshots/exam-result.png" width="800"/>
-</p>
-
----
-
-### 📝 Notice
-<p align="center">
-  <img src="screenshots/notice-1.png" width="800"/>
-</p>
-
----
-
-### 👨‍🏫 User Management
-<p align="center">
-  <img src="screenshots/user-management.png" width="800"/>
-</p>
-
----
+## 👩‍💻 Developer
+Neha Joshi
+- 📧 Email: neha.joshi9299@gmail.com
+- 💼 LinkedIn: linkedin.com/in/neha-joshi
