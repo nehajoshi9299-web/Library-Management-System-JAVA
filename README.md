@@ -175,7 +175,7 @@ String password = "your_password";
 <p align="center">
   <img src="screenshots/stu-dashboard.jpg" width="800"/>
 </p>
-### 🔄 Request for Book Issue
+### 🔄 Request for Issue Book
 <p align="center">
   <img src="screenshots/stu-request-book.jpg" width="800"/>
 </p>
