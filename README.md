@@ -171,7 +171,7 @@ String password = "your_password";
 
 ---
 
-### Student
+### 👩‍🎓 Student
 <p align="center">
   <img src="screenshots/stu-dashboard.jpg" width="800"/>
 </p>
